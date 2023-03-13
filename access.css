@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'sarabun', Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -42,5 +43,54 @@
 }
 
 .right {
-    grid-column-start: 3/4;
+    grid-column: 3/4;
+    grid-template-rows: 320px 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.participants {
+    height: 320px;
+    width: 450px;
+    grid-row: 1/2;
+}
+
+.participants_participants {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.text2 {
+    font-size: 22px;
+    height: 36px;
+    width: 36px;
+    color: #EB7F9A;
+    background-color: #FDF2F4;
+    border-radius: 16px;
+}
+
+.friend1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat {
+    height: 580px;
+    width: 450px;
+    grid-row: 2/3;
 }
