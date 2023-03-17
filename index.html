@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Conference call</title>
     <link rel="stylesheet" href="./access.css">
+    <script src="https://kit.fontawesome.com/610df98630.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,43 +36,67 @@
         <!-- Phần bên phải -->
         <div class="right">
             <div class="participants">
-                <div class="participants_participants">
-                    <p class="text1">Participants</p>
-                    <p class="text2">4</p>
-                    <p class="participants_participants2">+ Add</p>
-                </div>
-                <div class="friend1">
-                    <img src="./img/avt1.png" alt="">
-                    <div>
-                        <img src="./img/mic1.png" alt="">
-                        <img src="./img/cam_small.png" alt="">
-                        <img src="./img/menu-dots.png" alt="">
+                <div class="title_par">
+                    <div class="par_text">
+                        <p class="text">Participants</p>
+                        <p class="number">4</p>
                     </div>
+                    <button class="bt_add">
+                        <i class="fa-solid fa-plus icon_add"></i>
+                        Add
+                    </button>
                 </div>
-                <div class="freand2">
-                    <img src="./img/avt2.png" alt="">
-                    <div>
-                        <img src="./img/mic1.png" alt="">
-                        <img src="./img/cam_small.png" alt="">
-                        <img src="./img/menu-dots.png" alt="">
-                    </div>
-                </div>
-                <div class="freand3">
-                    <img src="./img/avt3.png" alt="">
-                    <div>
-                        <img src="./img/mic1.png" alt="">
-                        <img src="./img/cam_small.png" alt="">
-                        <img src="./img/menu-dots.png" alt="">
-                    </div>
-                </div>
-                <div class="freand4">
-                    <img src="./img/avt4.png" alt="">
-                    <div>
-                        <img src="./img/mic1.png" alt="">
-                        <img src="./img/cam_small.png" alt="">
-                        <img src="./img/menu-dots.png" alt="">
-                    </div>
-                </div>
+                <!-- Danh sách các thành viên tham gia cuộc gọi -->
+                <ul class="list">
+                    <!-- Thành viên tham gia thứ nhất -->
+                    <li class="friend">
+                        <div class="avt">
+                            <img src="./img/avt1.png" alt="">
+                            <p class="text">Benjamin Crawford</p>
+                        </div>
+                        <div class="button">
+                            <img src="./img/mic1.png" alt="">
+                            <img src="./img/cam_small.png" alt="">
+                            <i class="fa-solid fa-ellipsis icon_dots"></i>
+                        </div>
+                    </li>
+                    <!-- Thành viên tham gia thứ 2 -->
+                    <li class="friend">
+                        <div class="avt">
+                            <img src="./img/avt2.png" alt="">
+                            <p class="text">Christian Scott</p>
+                        </div>
+                        <div class="button">
+                            <img src="./img/mic1.png" alt="">
+                            <img src="./img/cam_small.png" alt="">
+                            <i class="fa-solid fa-ellipsis icon_dots"></i>
+                        </div>
+                    </li>
+                    <!-- Thành viên tham gia thứ 3 -->
+                    <li class="friend">
+                        <div class="avt">
+                            <img src="./img/avt3.png" alt="">
+                            <p class="text">Deborah Chu</p>
+                        </div>
+                        <div class="button">
+                            <img src="./img/mic1.png" alt="">
+                            <img src="./img/cam_small.png" alt="">
+                            <i class="fa-solid fa-ellipsis icon_dots"></i>
+                        </div>
+                    </li>
+                    <!-- Thành viên tham gia thứ 4 -->
+                    <li class="friend">
+                        <div class="avt">
+                            <img src="./img/avt4.png" alt="">
+                            <p class="text">Jordan Nieves</p>
+                        </div>
+                        <div class="button">
+                            <img src="./img/mic1.png" alt="">
+                            <img src="./img/cam_small.png" alt="">
+                            <i class="fa-solid fa-ellipsis icon_dots"></i>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="chat">
 

@@ -7,7 +7,6 @@
 .container {
     width: 1440px;
     height: 900px;
-    background-color: blanchedalmond;
     display: grid;
     grid-template-columns: 80px 830px 450px;
     grid-column-gap: 40px;
@@ -15,7 +14,7 @@
 
 .left {
     grid-column: 1/2;
-    border-right: 0.1px solid gray;
+    border-right: 1px solid #EAECEFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,53 +43,110 @@
 
 .right {
     grid-column: 3/4;
-    grid-template-rows: 320px 580px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 323px 576px;
 }
 
-.participants {
-    height: 320px;
-    width: 450px;
-    grid-row: 1/2;
+.right .participants {
+    position: relative;
+    border-left: 1px solid #EAECEFFF;
+    border-bottom: 1px solid #EAECEFFF;
 }
 
-.participants_participants {
+.participants p {
+    display: inline-block;
+}
+
+.participants .title_par {
+    position: absolute;
+    width: 386px;
+    top: 32px;
+    left: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.text1 {
-    font-size: 32px;
+.par_title .par_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.par_text .text {
+    padding-right: 8px;
+    font-size: 24px;
     font-weight: bold;
 }
 
-.text2 {
-    font-size: 22px;
+.par_text .number {
+    padding: 6px;
+    font-size: 12px;
+    background-color: #FDF2F4FF;
+    border-radius: 12px;
+    color: #E34D73FF;
+}
+
+.title_par .bt_add {
+    width: 72px;
     height: 36px;
-    width: 36px;
-    color: #EB7F9A;
-    background-color: #FDF2F4;
-    border-radius: 16px;
+    color: #E34D73FF;
+    border: 1px solid #E34D73FF;;
+    background: #FFFFFFFF;
 }
 
-.friend1 {
+.bt_add .icon_add {
+    padding: 3px; 
+}
+
+.participants .list {
+    position: absolute;
+    list-style-type: none;
+    width: 386px;
+    height: 192px;
+    top: 100px;
+    left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.list .friend {
+    width: 386px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.friend2 {
+.list .avt {
+    width: 181px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avt .text {
+    width: max-content;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+.list .button {
+    width: 76px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.button .icon_dots {
+    color: #6E7787;
+    font-size: 12px;
 }
 
 .chat {
+    grid-row: 2/3;
     height: 580px;
     width: 450px;
-    grid-row: 2/3;
+    border-left: 1px solid #EAECEFFF;
 }
