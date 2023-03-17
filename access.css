@@ -305,18 +305,17 @@
     grid-template-rows: 145px 495px 185px 70px;
 }
 
-.heading_title {
+/* Tiêu đề - thời gian */
+.heading_title{
     grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 40px 830px 40px;
 }
 
 .content_heading {
     position: relative;
-    grid-column: 2/3;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 35px;
 }
 
 .metting {
@@ -325,14 +324,9 @@
     justify-content: space-around;
 }
 
-.metting p {
-    padding: 5px 10px;
-}
-
 .metting .title {
     font-size: 24px;
     font-weight: bold;
-    padding-left: 0px;
 }
 
 .metting .subtitle {
@@ -340,6 +334,7 @@
 }
 
 .metting .subtitle .internal {
+    padding: 5px 10px;
     font-size: 12px;
     line-height: 20px;
     background-color: #E34D73;
@@ -380,8 +375,26 @@
     font-size: 10px;
 }
 
+/* Phần hình ảnh */
+.pic p {
+    display: inline-block;
+}
+
+.box_img .name {
+    border-radius: 4px;
+    background-color: #171A1F80;
+}
+
+.box_img .name .text_img {
+    color: #fff;
+}
+
+.box_img .name .dot_img {
+    color: #1DD75BFF;
+}
+
+/* Hình ảnh to nhất */
 .pic_main {
-    grid-row: 2/3;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -426,7 +439,6 @@
     top: 15px;
     left: 8px;
     font-size: 8px;
-    color: rgb(29,215,91);
 }
 
 .name_big .text_img_big {
@@ -435,4 +447,57 @@
     left: 24px;
     font-size: 14px;
     line-height: 22px;
+}
+
+/* phan hinh anh nho o giua man hinh */
+.picter_member {
+    grid-row: 3/4;
+    display: grid;
+}
+.pic_members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_img {
+   width: 261px; 
+   height: 160px;
+   position: relative;
+}
+
+.box_img .img_member {
+    border-radius: 4px;
+}
+
+.box_img .img_mic_member {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+}
+
+.box_img .name_member {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 101px;
+    height: 26px;
+    border-radius: 4px;
+    background-color:  #171A1F80;
+}
+
+.name_member .dot_img {
+    color: #1DD75BFF;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    font-size: 8px;
+}
+
+.name_member .text_img {
+    position: absolute;
+    top: 4px;
+    left: 24px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #fff;
 }
