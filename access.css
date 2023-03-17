@@ -330,7 +330,7 @@
 }
 
 .metting .subtitle {
-    padding: 20px 0px;
+    padding-top: 25px;
 }
 
 .metting .subtitle .internal {
@@ -447,6 +447,16 @@
     left: 24px;
     font-size: 14px;
     line-height: 22px;
+}
+
+.box_img .name_big {
+    position: absolute;
+    top: 24px;
+    left: 8px;
+    width: 101px;
+    height: 26px;
+    border-radius: 4px;
+    background-color: #171A1F80;
 }
 
 /* phan hinh anh nho o giua man hinh */
