@@ -375,7 +375,7 @@
     font-size: 10px;
 }
 
-/* Phần hình ảnh */
+/* Phần hình ảnh ở màn hình*/
 .pic p {
     display: inline-block;
 }
@@ -393,7 +393,7 @@
     color: #1DD75BFF;
 }
 
-/* Hình ảnh to nhất */
+/* Hình ảnh to nhất ở giữa màn hình*/
 .pic_main {
     display: flex;
     justify-content: center;
@@ -459,7 +459,7 @@
     background-color: #171A1F80;
 }
 
-/* phan hinh anh nho o giua man hinh */
+/* Phần các hình ảnh nhỏ ở phần giữa màn hình */
 .picter_member {
     grid-row: 3/4;
     display: grid;
