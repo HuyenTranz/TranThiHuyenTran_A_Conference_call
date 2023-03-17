@@ -453,10 +453,11 @@
     position: absolute;
     top: 24px;
     left: 8px;
-    width: 101px;
-    height: 26px;
+    width: 159px;
+    height: 38px;
     border-radius: 4px;
     background-color: #171A1F80;
+    color: #fff;
 }
 
 /* Phần các hình ảnh nhỏ ở phần giữa màn hình */
@@ -492,7 +493,7 @@
     width: 101px;
     height: 26px;
     border-radius: 4px;
-    background-color:  #171A1F80;
+    background-color: #171A1F80;
 }
 
 .name_member .dot_img {
