@@ -76,6 +76,7 @@
 .par_text .text {
     padding-right: 8px;
     font-size: 24px;
+    line-height: 36px;
     font-weight: bold;
 }
 
@@ -85,6 +86,7 @@
     background-color: #FDF2F4FF;
     border-radius: 12px;
     color: #E34D73FF;
+    cursor: pointer;
 }
 
 .title_par .bt_add {
@@ -144,9 +146,156 @@
     font-size: 12px;
 }
 
-.chat {
+.right .chat {
+    position: relative;
+    display: block;
     grid-row: 2/3;
     height: 580px;
     width: 450px;
     border-left: 1px solid #EAECEFFF;
+}
+
+.chat .text_chat {
+    position: absolute;
+    top: 33px;
+    left: 32px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chat .friend_chat .avt {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+}
+
+.friend_chat p {
+    display: inline-block;
+}
+
+.friend_chat .name {
+    width: max-content;
+    position: absolute;
+    left: 52px;
+    font-size: 14px; 
+    font-weight: bold;
+    line-height: 36px; 
+    color: #323842FF;
+}
+
+.friend_chat .time {
+    width: max-content;
+    font-size: 12px; 
+    line-height: 36px; 
+    color: #9095A0FF;
+}
+
+.friend_chat .mess {
+    width: 334px; 
+    height: 68px; 
+    position: absolute;
+    top: 36px;
+    left: 52px;
+    background-color: #F8F9FAFF;
+    border-radius: 4px;
+}
+
+.mess .text {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    font-size: 14px;
+    line-height: 22px;
+    color:  #171A1FFF;
+}
+
+.chat .Deborah_Chu {
+    position: absolute;
+    top: 101px;
+    left: 32px;
+}
+
+.Deborah_Chu .time {
+    position: absolute;
+    left: 152px;
+}
+
+.chat .Jordan_Nieves {
+    position: absolute;
+    top: 229px;
+    left: 32px;
+}
+
+.Jordan_Nieves .time {
+    position: absolute;
+    left: 157px;
+}
+
+.chat .Benjamin_Crawford {
+    position: absolute;
+    top: 357px;
+    left: 32px;
+}
+
+.Benjamin_Crawford .time {
+    position: absolute;
+    left: 196px;
+}
+
+.Benjamin_Crawford .mess_benjamin {
+    width: 99px; 
+    height: 52px; 
+    background: #FDF2F4FF;
+
+}
+
+.chat .Christian_Scott {
+    position: absolute;
+    top: 469px;
+    left: 32px;
+}
+
+.Christian_Scott .form_input {
+    width: 386px;
+    position: absolute;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_input .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F4F6;
+    border-radius: 4px;
+}
+
+.input .text_input {
+    width: 270px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #BCC1CA;
+    background-color: #F3F4F6;
+}
+
+.input .icon_chat {
+    padding: 10px;
+}
+
+.input .typing {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 52px;
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #6E7787FF;
+    background-color: #F8F9FA;
+    padding: 10px;
+    box-sizing: border-box;
 }
