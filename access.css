@@ -301,14 +301,9 @@
 /* Phần center */
 .center {
     grid-column: 2/3;
-    display: grid;
-    grid-template-rows: 145px 495px 185px 70px;
 }
 
 /* Tiêu đề - thời gian */
-.heading_title{
-    grid-row: 1/2;
-}
 
 .content_heading {
     position: relative;
@@ -461,13 +456,10 @@
 }
 
 /* Phần các hình ảnh nhỏ ở phần giữa màn hình */
-.picter_member {
-    grid-row: 3/4;
-    display: grid;
-}
 .pic_members {
     display: flex;
     justify-content: space-between;
+    padding-top: 24px;
 }
 
 .box_img {
@@ -511,4 +503,30 @@
     font-size: 11px;
     line-height: 18px;
     color: #fff;
+}
+
+/* Phần cuối của center */
+.action_center {
+    display: grid;
+    grid-template-columns: 172px 486px 172px;
+    padding-top: 24px;
+}
+
+.action_center .box_action {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_action .img_action {
+    height: 44px;
+}
+
+.box_action .button_end {
+    width: 126px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #F22128FF;
+    border: none;
+    border-radius: 4px;
 }
